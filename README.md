@@ -19,3 +19,9 @@ Users can select different categories and test their knowledge in a fun way.
 - CSS
 - JavaScript
 
+---
+
+##Screenshot
+<img width="1920" height="913" alt="Screenshot 2026-03-29 at 23-37-47 Science Rapid Battle Arena" src="https://github.com/user-attachments/assets/dfbaebe5-ca1c-40cb-87c9-2685c6382b8a" />
+
+
