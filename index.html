@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Science Rapid Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcome">
+    <h2>Ultimate Quiz Game 🎮</h2>
+
+    <input type="text" id="playerName" placeholder="Enter your name">
+    <br><br>
+
+    <h3>Select Category</h3>
+
+    <div class="category-options">
+
+        <input type="radio" id="science" name="category" value="science">
+        <label for="science" class="category-card">🔬 Science</label>
+
+        <input type="radio" id="movies" name="category" value="movies">
+        <label for="movies" class="category-card">🎬 Movies</label>
+
+        <input type="radio" id="cartoons" name="category" value="cartoons">
+        <label for="cartoons" class="category-card">🎨 Cartoons</label>
+
+        <input type="radio" id="sports" name="category" value="sports">
+        <label for="sports" class="category-card">⚽ Sports</label>
+
+    </div>
+
+    <br>
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="quiz" style="display:none;">
+
+    <div id="gameArea">
+        <h3 id="categoryTitle"></h3>
+        <h3 id="lives"></h3>
+        <h3 id="progress"></h3>
+        <h3 id="timer"></h3>
+
+        <p id="question"></p>
+
+        <button onclick="checkAnswer(0)"></button>
+        <button onclick="checkAnswer(1)"></button>
+        <button onclick="checkAnswer(2)"></button>
+        <button onclick="checkAnswer(3)"></button>
+
+        <p id="result"></p>
+    </div>
+
+    <div id="endScreen" style="display:none;">
+        <h2 id="finalMessage"></h2>
+        <p id="finalScore"></p>
+        <button onclick="showLeaderboard()">Show Leaderboard</button>
+        <button onclick="restartGame()">Next Player</button>
+    </div>
+
+    <div id="leaderboardScreen" style="display:none;">
+        <h2>🏆 Leaderboard</h2>
+        <div id="leaderboardList"></div>
+        <br>
+        <button onclick="restartGame()">Next Player</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
